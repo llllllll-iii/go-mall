@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package webapi.home;
+
+import "webapi/common.proto";
+option go_package = "webapi/home";
+
+import "api.proto";
+
+
+
+service HomeService {
+  rpc Method1(common.Empty) returns(common.Empty) {
+    option (api.get) = "/";
+  }
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package webapi.common;
+
+option go_package = "webapi/common";
+
+import "api.proto";
+
+
+message Empty {
+}
